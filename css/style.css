@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Nanum+Gothic&family=Nunito:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.gridArt{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "piloto1 piloto2 piloto3"
+    "piloto4 piloto5 piloto6"
+    "piloto7 piloto8 piloto9"
+    "footer footer footer"
+    ;
+    gap: 20px;
+}
+
+.headerNav{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(155, 20, 20);
+}
+
+.barraNav{
+    position: sticky;
+    top: 30px;
+}
+.barraNav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.barraNav li a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navImage{
+    height: 60px;
+    border-radius: 50%;
+}
+.ini{
+    height: 200px;
+    padding: 100px;
+}
+
+.flexContainer {
+    padding: 30px;
+    height: 300px;
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flexContainer2 {
+    padding: 30px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flexContainer2 div{
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(206, 212, 218);
+    border-radius: 50%;
+}
+
+.uno{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.dos{
+    color: rgb(33, 37, 41);
+    font-size: 20px;
+}
+
+footer{
+    padding: 40px;
+    background-color: rgb(73, 80, 87);
+    position: sticky;
+    bottom: 0;
+}
+ 
+footer div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerImage{
+    height: 40px;
+}
+
+
+.form1{
+    padding: 100px;
+    color: whitesmoke;
+    height: 800px;
+}
+
+.star{
+    padding: 50px;
+    height: 300px;
+    width: 100%;
+}
+
+.musicFirst{
+    padding: 100px;
+    height: 200px;
+}
+.musicTracks{
+    padding: 50px;
+}
+
+.standard{
+    height: 300px;
+    padding: 100px;
+    color: whitesmoke;
+}
+
+.standard2{
+    height: 700px;
+    padding: 100px;
+    color: whitesmoke;
+}
